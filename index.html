@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAIK - AI asistent pro kavárny a restaurace | Corporate AI Knowledge</title>
+    <meta name="description" content="Zrychlete objednávky a nabídněte zákazníkům jedinečný zážitek. Individuální AI model pro vaši kavárnu nebo restauraci.">
+    <meta name="author" content="CAIK - Corporate AI Knowledge">
+    <meta name="keywords" content="AI asistent, kavárna, restaurace, menu, objednávky, gastro, QR kód, chatbot">
+    
+    <meta property="og:title" content="CAIK - AI asistent pro kavárny a restaurace">
+    <meta property="og:description" content="Individuální AI model pro vaši kavárnu nebo restauraci. Pomozte hostům snadno se orientovat v menu.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="caik-logo.png" alt="CAIK Logo" class="logo-img">
+            </a>
+            
+            <nav class="nav-desktop">
+                <a href="#problem" class="nav-link">Problém</a>
+                <a href="#solution" class="nav-link">Řešení</a>
+                <a href="#plan" class="nav-link">Jak to funguje</a>
+                <a href="#benefits" class="nav-link">Benefity</a>
+            </nav>
+            
+            <div class="header-buttons">
+                <a href="mailto:info@caik.cz" class="btn btn-outline">Kontaktujte nás</a>
+                <a href="#demo" class="btn btn-cta">Vyzkoušejte demo</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav">
+                <a href="#problem" class="mobile-nav-link">Problém</a>
+                <a href="#solution" class="mobile-nav-link">Řešení</a>
+                <a href="#plan" class="mobile-nav-link">Jak to funguje</a>
+                <a href="#benefits" class="mobile-nav-link">Benefity</a>
+            </nav>
+            <div class="mobile-buttons">
+                <a href="mailto:info@caik.cz" class="btn btn-outline btn-full">Kontaktujte nás</a>
+                <a href="#demo" class="btn btn-cta btn-full">Vyzkoušejte demo</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <div class="hero-circle hero-circle-1"></div>
+                <div class="hero-circle hero-circle-2"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <span class="badge">AI řešení pro gastro provozy</span>
+                
+                <h1 class="hero-title">
+                    Zrychlete objednávky a nabídněte zákazníkům <span class="highlight">jedinečný zážitek</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Individuální AI model pro vaši kavárnu nebo restauraci. Pomozte hostům snadno se orientovat v menu, doporučte jim ty nejlepší položky a nabídněte podporu v jejich rodném jazyce.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-hero">Vyzkoušejte demo</a>
+                    <a href="mailto:info@caik.cz" class="btn btn-hero-outline">Kontaktujte nás</a>
+                </div>
+                
+                <div class="trust-indicators">
+                    <span class="trust-icon">☕</span>
+                    <span class="trust-icon">🍽️</span>
+                    <span class="trust-icon">🥐</span>
+                    <span class="trust-text">Pro kavárny a restaurace všech velikostí</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM SECTION -->
+        <section class="problem" id="problem">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Známé problémy v gastro provozech</h2>
+                    <p class="section-subtitle">
+                        Každý den čelíte výzvám, které brzdí váš byznys a frustrují zákazníky.
+                    </p>
+                </div>
+                
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3 class="problem-title">Dlouhé fronty</h3>
+                        <p class="problem-desc">Zákazníci nechtějí čekat. Každá minuta ve frontě znamená ztrátu potenciálního zisku a spokojenosti.</p>
+                    </div>
+                    
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                        </div>
+                        <h3 class="problem-title">Složité menu</h3>
+                        <p class="problem-desc">Hosté tráví minuty studiem menu a nevědí, co si vybrat. To zpomaluje obsluhu a snižuje obrat.</p>
+                    </div>
+                    
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="problem-title">Přetížený personál</h3>
+                        <p class="problem-desc">Obsluha nestíhá odpovídat na dotazy o složení jídel, alergenech a doporučeních.</p>
+                    </div>
+                    
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m2 12 5.2 5.2"/><path d="m7.2 12 5.2 5.2"/><path d="m12.4 12 5.2 5.2"/><path d="m2 12h20"/></svg>
+                        </div>
+                        <h3 class="problem-title">Jazyková bariéra</h3>
+                        <p class="problem-desc">Zahraniční hosté nerozumí menu a personál nemluví jejich jazykem. Ztrácíte turisty.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUTION SECTION -->
+        <section class="solution" id="solution">
+            <div class="container">
+                <div class="solution-grid">
+                    <div class="solution-content">
+                        <span class="badge">Řešení</span>
+                        <h2 class="section-title">AI asistent pro vaši restauraci</h2>
+                        <p class="section-text">
+                            CAIK je inteligentní AI chatbot, který pomáhá vašim hostům orientovat se v menu, odpovídá na dotazy a doporučuje položky podle jejich preferencí – vše přes jednoduchý QR kód.
+                        </p>
+                        
+                        <div class="features">
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><rect width="5" height="5" x="16" y="16" rx="1"/><path d="M21 16V8a2 2 0 0 0-2-2h-4"/><path d="M3 8v8"/><path d="M8 3h8"/><path d="M8 21h8"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="feature-title">QR kód na stole</h4>
+                                    <p class="feature-desc">Host naskenuje a okamžitě může chatovat s AI.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="feature-title">Inteligentní chat</h4>
+                                    <p class="feature-desc">AI zná vaše menu a odpovídá na dotazy hostů.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-2 2.5h3L12 7"/><path d="M10 14v-3"/><path d="M14 14v-3"/><path d="M11 19c-1.7 0-3-1.3-3-3v-2h8v2c0 1.7-1.3 3-3 3h-2Z"/><path d="M12 22v-3"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="feature-title">Rychlé odpovědi</h4>
+                                    <p class="feature-desc">Odpověď do 2 sekund, bez čekání na obsluhu.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="feature-title">Vícejazyčná podpora</h4>
+                                    <p class="feature-desc">Automatický překlad do jazyka hosta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-visual">
+                        <div class="phone-mockup">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen">
+                                <div class="chat-header">
+                                    <span class="chat-status"></span>
+                                    <span>CAIK Asistent</span>
+                                </div>
+                                <div class="chat-messages">
+                                    <div class="chat-bubble chat-bubble-ai">
+                                        Dobrý den! 👋 Jsem váš AI asistent. Jak vám mohu pomoci s výběrem?
+                                    </div>
+                                    <div class="chat-bubble chat-bubble-user">
+                                        Jaké máte bezlepkové možnosti?
+                                    </div>
+                                    <div class="chat-bubble chat-bubble-ai">
+                                        Máme pro vás tyto bezlepkové položky: Salát Caesar, Grilovaný losos, Risotto s houbami...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qr-float">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><rect width="5" height="5" x="16" y="16" rx="1"/><path d="M21 16V8a2 2 0 0 0-2-2h-4"/><path d="M3 8v8"/><path d="M8 3h8"/><path d="M8 21h8"/></svg>
+                            <span>Skenujte QR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLAN SECTION -->
+        <section class="plan" id="plan">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Jak začít?</h2>
+                    <p class="section-subtitle">
+                        Tři jednoduché kroky k AI asistentovi pro vaši provozovnu.
+                    </p>
+                </div>
+                
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" x2="12" y1="8" y2="8"/><line x1="3.95" x2="8.54" y1="6.06" y2="14"/><line x1="10.88" x2="15.46" y1="21.94" y2="14"/></svg>
+                        </div>
+                        <h3 class="step-title">Navštivte náš web</h3>
+                        <p class="step-desc">Prozkoumejte demo a zjistěte, jak CAIK funguje v praxi.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="step-title">Domluvte si schůzku</h3>
+                        <p class="step-desc">Náš tým vám představí možnosti a připraví řešení na míru.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <h3 class="step-title">Spuštění systému</h3>
+                        <p class="step-desc">My připravíme a nainstalujeme AI systém. Vy jen rozdáte QR kódy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS SECTION -->
+        <section class="benefits" id="benefits">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Proč zvolit CAIK?</h2>
+                    <p class="section-subtitle">
+                        Přinášíme měřitelné výsledky pro váš byznys.
+                    </p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        </div>
+                        <div class="benefit-stat">95%</div>
+                        <div class="benefit-label">spokojených hostů</div>
+                        <h3 class="benefit-title">Spokojení zákazníci</h3>
+                        <p class="benefit-desc">Hosté oceňují rychlou a přesnou pomoc při výběru jídla.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <div class="benefit-stat">+20%</div>
+                        <div class="benefit-label">nárůst tržeb</div>
+                        <h3 class="benefit-title">Vyšší zisky</h3>
+                        <p class="benefit-desc">AI doporučuje doplňky a prémiové položky, což zvyšuje průměrnou útrat.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+                        </div>
+                        <div class="benefit-stat">24/7</div>
+                        <div class="benefit-label">dostupnost</div>
+                        <h3 class="benefit-title">Unikátní zážitek</h3>
+                        <p class="benefit-desc">Moderní technologie, která zaujme a odliší vás od konkurence.</p>
+                    </div>
+                </div>
+                
+                <div class="benefits-checklist">
+                    <div class="checklist-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        <span>Bez nutnosti stahovat aplikaci</span>
+                    </div>
+                    <div class="checklist-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        <span>Přizpůsobeno vašemu menu</span>
+                    </div>
+                    <div class="checklist-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        <span>Podpora více jazyků</span>
+                    </div>
+                    <div class="checklist-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        <span>Rychlá implementace</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta" id="cta">
+            <div class="container">
+                <div class="cta-card">
+                    <h2 class="cta-title">Připraveni zlepšit zážitek vašich hostů?</h2>
+                    <p class="cta-subtitle">
+                        Vyzkoušejte CAIK ještě dnes a přesvědčte se o výhodách AI asistenta pro váš provoz.
+                    </p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#demo" class="btn btn-hero">Vyzkoušejte demo</a>
+                        <a href="mailto:info@caik.cz" class="btn btn-hero-outline">Kontaktujte nás</a>
+                    </div>
+                    
+                    <div class="cta-contact">
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <a href="mailto:info@caik.cz">info@caik.cz</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <a href="tel:+420123456789">+420 123 456 789</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-security">
+                <div class="security-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                    <span>Používáme OpenAI API</span>
+                </div>
+                <div class="security-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                    <span>Data ukládána max. 30 dní</span>
+                </div>
+                <div class="security-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>Data se nepoužívají k trénování AI</span>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-brand">
+                    <img src="caik-logo.png" alt="CAIK Logo" class="footer-logo">
+                    <span class="footer-copyright">© 2026 CAIK - Corporate AI Knowledge. Všechna práva vyhrazena.</span>
+                    <span class="footer-copyright">Tento web je součástí školního projektu CAIK.</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Ochrana soukromí</a>
+                    <a href="#" class="footer-link">Podmínky</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
